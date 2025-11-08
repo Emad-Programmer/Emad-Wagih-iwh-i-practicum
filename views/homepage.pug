@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title= title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1 Custom Object Table
+    a(href="/update-cobj") Add to this table
+    if items.length
+      table
+        thead
+          tr
+            each p in properties
+              th= p.charAt(0).toUpperCase() + p.slice(1)
+        tbody
+          each item in items
+            tr
+              each p in properties
+                td= item[p]
+    else
+      p No records found.
