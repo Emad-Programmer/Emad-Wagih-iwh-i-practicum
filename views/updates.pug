@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title= title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1 Update Custom Object Form | Integrating With HubSpot I Practicum
+    a(href="/") Return to the homepage
+    form(action="/update-cobj", method="POST")
+      each p in properties
+        div.form-row
+          label(for=p)= p.charAt(0).toUpperCase() + p.slice(1)
+          input(type="text", name=p, id=p)
+      button(type="submit") Create Record

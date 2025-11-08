@@ -1,58 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-body, * {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    margin: 1rem;
-}
-
-.cards {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.card {
-    flex-basis: 31%;
-    margin: 1rem 0.4rem;
-    padding: 1rem 0.4rem 2.5rem 0.4rem;
-    border: solid 1px lightgrey;
-    border-radius: 15px;
-    box-shadow: 3px 2px 6px lightgrey;
-}
-
-.card__email {
-    font-size: 1rem;
-}
-
-.form-wrapper {
-    font-size: 18px;
-    max-width: 768px;
-    margin: 2rem auto;
-    padding: 2rem;
-    border: solid 1px lightgrey;
-    border-radius: 15px;
-    box-shadow: 3px 2px 6px lightgrey;
-}
-
-label, input {
-    margin-top: 5px;
-    display: block;
-    font-size: inherit;
-}
-
-input[type="text"] {
-    padding: .25rem;
-}
-
-input[type="submit"] {
-    background-color: lightgrey;
-    border: none;
-    padding: .375rem 1rem;
-    margin-top: 10px;
-}
+body { font-family: Georgia, serif; margin: 24px; }
+h1 { font-size: 48px; margin-bottom: 10px; }
+a { display:block; margin-bottom: 12px; color: #1a73e8; }
+table { border-collapse: collapse; width: 100%; max-width: 900px; }
+th, td { border: 1px solid #aaa; padding: 8px 12px; text-align: left; font-size: 22px; }
+th { background: #f2c8cc; text-align:center; font-size: 26px;}
+.form-row { margin: 8px 0; }
+label { display:block; margin-bottom: 4px; font-weight: 600; }
+input[type="text"] { width: 400px; padding: 6px; font-size: 18px; }
+button { margin-top: 12px; padding: 8px 16px; font-size: 16px; }
